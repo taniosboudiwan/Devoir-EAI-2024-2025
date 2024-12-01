@@ -28,7 +28,7 @@ This project demonstrates a basic producer-consumer pattern using RabbitMQ, wher
   }
   ```
 
-  ### `consumer.py`
+### `consumer.py`
 - **Purpose**: Receives the JSON message from the `payment_queue` and saves it as an XML file.
 - **Key Features**:
   - Listens for messages on the `payment_queue`.
@@ -36,18 +36,17 @@ This project demonstrates a basic producer-consumer pattern using RabbitMQ, wher
   - Saves the XML data to a file named `PaymentRequest.xml`.
 - **Output Example**:
   ```xml
-<?xml version='1.0' encoding='utf-8'?>
-<PaymentRequest>
-    <PaymentID>12345</PaymentID>
-    <Amount>200.75</Amount>
-    <Currency>EUR</Currency>
-    <Payer>
-        <Name>Alice Dupont</Name>
-        <Account>FR7630006000011234567890189</Account>
-    </Payer>
-    <Payee>
-        <Name>Bob Martin</Name>
-        <Account>BE68539007547034</Account>
-    </Payee>
-</PaymentRequest>
-
+  <?xml version='1.0' encoding='utf-8'?>
+  <PaymentRequest>
+      <PaymentID>12345</PaymentID>
+      <Amount>200.75</Amount>
+      <Currency>EUR</Currency>
+      <Payer>
+          <Name>Alice Dupont</Name>
+          <Account>FR7630006000011234567890189</Account>
+      </Payer>
+      <Payee>
+          <Name>Bob Martin</Name>
+          <Account>BE68539007547034</Account>
+      </Payee>
+  </PaymentRequest>
