@@ -26,6 +26,7 @@ This project demonstrates a basic producer-consumer pattern using RabbitMQ, wher
         "Account": "BE68539007547034"
     }
   }
+  ```
 
   ### `consumer.py`
 - **Purpose**: Receives the JSON message from the `payment_queue` and saves it as an XML file.
